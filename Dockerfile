@@ -46,6 +46,8 @@ RUN cpanm \
         Set::Scalar \
         Sort::Naturally \
         Spreadsheet::ParseExcel \
+        XML::DOM \
+        XML::DOM::XPath \
         XML::Parser \
         XML::Parser::PerlSAX \
         XML::SAX \
@@ -55,7 +57,9 @@ RUN cpanm \
         XML::Writer \
         YAML \
         DBI \
-        DBD::SQLite
+        DBD::SQLite \
+        Bio::Phylo \
+        Math::Random
 RUN wget http://search.cpan.org/CPAN/authors/id/C/CJ/CJFIELDS/BioPerl-$VERSION.tar.gz && \
     tar xzvf BioPerl-$VERSION.tar.gz && \
     cd BioPerl-$VERSION && \
